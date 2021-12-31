@@ -4,90 +4,97 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preload" href="./fonts/Graphik-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel='stylesheet' type='text/css' href='./css/style.css'>
+    <link rel="preload" href="./fonts/Graphik-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <title>Smallcase</title>
 </head>
 
 <body>
     <!-- Start Navbar -->
-    <div class="herobackground">
-        <nav class="navbar">
-            <div class="container">
-                <a class="navbar-brand" href="#">
+    <nav class="container mt-4">
+        <!-- <div class="container"> -->
+        <div class="row align-items-center justify-content-between">
+            <div class="col">
+                <a class="navbar-brand nav-item" href="#">
                     <img src="./assets/icon/logo.png" alt="" class="d-inline-block align-text-top">
                 </a>
-                <button class="btn primary-btn" type="submit">Login with broker</button>
             </div>
-        </nav>
-        <!-- End Navbar -->
-        <!-- hero section 1 started -->
-        <div class="hero-section-container-1 d-flex">
-            <div class="hero-section-container container align-self-center">
-                <div class="row">
-                    <div class="col">
-                        <p class="hero-section-title">Looking for best SIPs in the market?</p>
-                        <p class="hero-section-subtitle">Invest through a simple, convenient & a discipline way to
-                            achieve
-                            financial goals. Advantage of doing SIP through smallcase</p>
-                        <div class="row mb-3">
-                            <div class="col hero-section-content-icon-button">
-                                <img src="./assets/images/icon-up.png" alt="">
-                                Own stocks
-                            </div>
-                            <div class="col hero-section-content-icon-button">
-                                <img src="./assets/images/icon-up.png" alt="">
-                                Customisation
-                            </div>
-                            <div class="col hero-section-content-icon-button">
-                                <img src="./assets/images/icon-up.png" alt="">
-                                Start with < ₹200 </div>
-                            </div>
-                            <div class="row hero-section-link">
-                                <div class="col-4 border-end">
-                                    <div class="d-flex align-items-start">
-                                        <img class="me-1" src="./assets/images/trust.png" alt="">
-                                        <div>
-                                            <p class="m-0 hero-section-link-title">Trusted By</p>
-                                            <p class="bold hero-section-link-subtitle">40 lakh+ investors</p>
-                                        </div>
+            <div class="col float-end">
+                <button class="btn primary-btn nav-login float-end" type="submit">Login with broker</button>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Hero Area -->
+    <section class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col">
+                    <h1 class="hero-section-title">Looking for best SIPs in the market?
+                    </h1>
+                    <p class="hero-section-subtitle mt-1">Invest through a simple, convenient & a discipline way to
+                        achieve
+                        financial goals. Advantage of doing SIP through smallcase</p>
+                    <div class="row mt-3">
+                        <div class="col hero-section-content-icon-button">
+                            <img src="./assets/images/icon-up.png" alt="">
+                            Own stocks
+                        </div>
+                        <div class="col hero-section-content-icon-button">
+                            <img src="./assets/images/icon-up.png" alt="">
+                            Customisation
+                        </div>
+                        <div class="col hero-section-content-icon-button">
+                            <img src="./assets/images/icon-up.png" alt="">
+                            Start with < ₹200 </div>
+                        </div>
+                        <div class="row hero-section-link mt-4">
+                            <div class="col-4 border-end">
+                                <div class="d-flex align-items-start">
+                                    <img class="me-1" src="./assets/images/trust.png" alt="">
+                                    <div>
+                                        <p class="m-0 hero-section-link-title">Trusted By</p>
+                                        <p class="bold hero-section-link-subtitle">40 lakh+ investors</p>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <p class="m-0 hero-section-link-title">Managed By</p>
-                                    <p class="bold hero-section-link-subtitle">SEBI Regd. Professionals</p>
-                                </div>
+                            </div>
+                            <div class="col">
+                                <p class="m-0 hero-section-link-title">Managed By</p>
+                                <p class="bold hero-section-link-subtitle">SEBI Regd. Professionals</p>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card" style="width: 24rem;">
-                                <div class="card-body">
-                                    <div class="flex mb-2">
-                                        <img class="me-2" src="./assets/images/smallcase-image.png" alt="">
-                                        <div>
-                                            <h5 class="card-title">All Weather Investing</h5>
-                                            <h6 class="card-subtitle mb-2">Most SIP’ed smallcase</h6>
-                                        </div>
-                                    </div>
-                                    <p class="card-text">One investment for all market conditions. Works for everyone
-                                    </p>
-                                    <div class="d-grid gap-2">
-                                        <a href="#" class="btn btn-primary">View stocks and weights</a>
+                    </div>
+                    <div class="col float-end">
+                        <div class="card float-end" style="width: 24rem;">
+                            <div class="card-body">
+                                <div class="flex mb-2">
+                                    <img class="me-2" src="./assets/images/smallcase-image.png" alt="">
+                                    <div>
+                                        <h5 class="card-title">All Weather Investing</h5>
+                                        <h6 class="card-subtitle mb-2">Most SIP’ed smallcase</h6>
                                     </div>
                                 </div>
-                                <div class="card-footer">
-                                   <img src="./assets/images/new_star.png" alt=""> Basket of 2 ETFs of dividend paying companies
+                                <p class="card-text">One investment for all market conditions. Works for everyone
+                                </p>
+                                <div class="d-grid gap-2">
+                                    <a href="#" class="btn btn-primary">View stocks and weights</a>
                                 </div>
+                            </div>
+                            <div class="card-footer">
+                                <img src="./assets/images/new_star.png" alt=""> Basket of 2 ETFs of dividend paying
+                                companies
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- hero section 1 end -->
-        <!-- hero section 2 Start -->
+    </section>
+        <!-- End Hero Area -->
+
+        <!-- Start Popular Area -->
         <div class="hero-section-2-main d-flex flex-column align-items-center justify-content-evenly">
             <div class="d-flex flex-column align-items-center">
                 <h1 class="hero-section2-title">Popular in SIP among investors</h1>
@@ -95,96 +102,124 @@
             </div>
             <div class="container">
                 <div class="row">
-                  <div class="col">
-                    <div class="card" style="width: 22rem;">
-                        <div class="card-body">
-                            <div class="mb-4">
-                                <img class="mb-2" src="./assets/images/smallcase-image.png" alt="">
-                                <div>
-                                    <h5 class="card-title">All Weather Investing</h5>
-                                    <h6 class="card-subtitle mb-2">Most SIP’ed smallcase</h6>
+                    <div class="col">
+                        <div class="card" style="width: 22rem;">
+                            <div class="card-body">
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <img class="mb-2" src="./assets/images/top100.png" alt="">
+                                        <button class="btn primary-btn" type="submit">View graph</button>
+                                    </div>
+                                    <div>
+                                        <h5 class="hero-section-2-main-card-title card-title">Top 100 Stocks</h5>
+                                        <h6 class="hero-section-2-main-card-subtitle card-subtitle mb-2">Most SIP’ed
+                                            smallcase</h6>
+                                    </div>
                                 </div>
+                                <p class="card-text hero-section-2-main-card-subtitle">One investment for all market
+                                    conditions. Works for everyone
+                                </p>
+                                <div>
+                                    <div class="row">
+                                        <div class="col">
+                                            SIP Amount
+                                        </div>
+                                        <div class="col">3Y agcr</div>
+                                        <div class="col">
+                                            Med volatility
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- enter a grid -->
                             </div>
-                            <p class="card-text">One investment for all market conditions. Works for everyone
-                            </p>
-                            <!-- enter a grid -->
                         </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 22rem;">
-                        <div class="card-body">
-                            <div class="mb-4">
-                                <img class="mb-2" src="./assets/images/smallcase-image.png" alt="">
-                                <div>
-                                    <h5 class="card-title">All Weather Investing</h5>
-                                    <h6 class="card-subtitle mb-2">Most SIP’ed smallcase</h6>
+                    <div class="col">
+                        <div class="card" style="width: 22rem;">
+                            <div class="card-body">
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <img class="mb-2" src="./assets/images/top100.png" alt="">
+                                        <button class="btn primary-btn" type="submit">View graph</button>
+                                    </div>
+                                    <div>
+                                        <h5 class="hero-section-2-main-card-title card-title">Top 100 Stocks</h5>
+                                        <h6 class="hero-section-2-main-card-subtitle card-subtitle mb-2">Most SIP’ed
+                                            smallcase</h6>
+                                    </div>
                                 </div>
+                                <p class="card-text hero-section-2-main-card-subtitle">One investment for all market
+                                    conditions. Works for everyone
+                                </p>
+                                <!-- enter a grid -->
                             </div>
-                            <p class="card-text">One investment for all market conditions. Works for everyone
-                            </p>
-                            <!-- enter a grid -->
                         </div>
                     </div>
-                  </div>
-                  <div class="col">
-                    <div class="card" style="width: 22rem;">
-                        <div class="card-body">
-                            <div class="mb-4">
-                                <img class="mb-2" src="./assets/images/smallcase-image.png" alt="">
-                                <div>
-                                    <h5 class="card-title">All Weather Investing</h5>
-                                    <h6 class="card-subtitle mb-2">Most SIP’ed smallcase</h6>
+                    <div class="col">
+                        <div class="card" style="width: 22rem;">
+                            <div class="card-body">
+                                <div class="mb-4">
+                                    <div class="d-flex align-items-start justify-content-between">
+                                        <img class="mb-2" src="./assets/images/top100.png" alt="">
+                                        <button class="btn primary-btn" type="submit">View graph</button>
+                                    </div>
+                                    <div>
+                                        <h5 class="hero-section-2-main-card-title card-title">Top 100 Stocks</h5>
+                                        <h6 class="hero-section-2-main-card-subtitle card-subtitle mb-2">Most SIP’ed
+                                            smallcase</h6>
+                                    </div>
                                 </div>
+                                <p class="card-text hero-section-2-main-card-subtitle">One investment for all market
+                                    conditions. Works for everyone
+                                </p>
+                                <!-- enter a grid -->
                             </div>
-                            <p class="card-text">One investment for all market conditions. Works for everyone
-                            </p>
-                            <!-- enter a grid -->
                         </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-            <button>See all momentum smallcase</button>
         </div>
-        <!-- hero section 2 end -->
-        <!-- hero section 3 Start -->
-        <div class="h-40 flex align-center justify-around">
-            <div class="hero w-30">
-                <h1>Invest in ideas with smallcases</h1>
+    </div>
+    <!-- hero section 2 end -->
+    <!-- hero section 3 Start -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>What are smallcases?</h1>
                 <p>
-                    A smallcase is a basket of stocks that reflects an investing
-                    idea. Each basket is made of intelligently wieghted stocks
-                    & ETFs that tracks a theme, strategy or objective.
-                </p>
-                <p>
+                    A smallcase is a basket of stocks that reflects an investing idea. Each basket is made of
+                    intelligently wieghted stocks & ETFs that tracks a theme, strategy or objective.
+
                     Have an idea you're bullish on? There's a smallcase for it!
                 </p>
             </div>
-            <div class="hero w-30">
-                <div>
-                    <h5>Simple to understand</h5>
-                    <p>smallcases are modern investing products
-                        based on simple ideas you can understand</p>
-                </div>
-                <div>
-                    <h5>Managed by professionals</h5>
-                    <p>smallcases are modern investing products
-                        based on simple ideas you can understand</p>
-                </div>
-                <div>
-                    <h5>Designed for you</h5>
-                    <p>smallcases are modern investing products
-                        based on simple ideas you can understand</p>
+            <div class="col">
+                <div class="">
+                    <div>
+                        <h5>Simple to understand</h5>
+                        <p>smallcases are modern investing products
+                            based on simple ideas you can understand</p>
+                    </div>
+                    <div>
+                        <h5>Managed by professionals</h5>
+                        <p>smallcases are modern investing products
+                            based on simple ideas you can understand</p>
+                    </div>
+                    <div>
+                        <h5>Designed for you</h5>
+                        <p>smallcases are modern investing products
+                            based on simple ideas you can understand</p>
+                    </div>
                 </div>
             </div>
+
         </div>
-        <!-- hero section 3 end -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-        <script src="./js/index.js"></script>
+    </div>
+    <!-- hero section 3 end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

@@ -1,5 +1,28 @@
-.your-style {
-  font-family: "Graphik";
+body {
+  font-family: "Graphik", sans-serif;
+}
+/* ******** Margin ********** */
+.m-0 {
+  margin: 0 !important;
+}
+.mt-1 {
+  margin-top: 10px !important;
+}
+.mt-2 {
+  margin-top: 20px !important;
+}
+.mt-3 {
+  margin-top: 30px !important;
+}
+.mt-4 {
+  margin-top: 40px !important;
+}
+.mt-5 {
+  margin-top: 50px !important;
+}
+/* ******** Navbar ********** */
+.navbar {
+  height: 10vh;
 }
 .primary-btn {
   color: #1f7ae0 !important;
@@ -7,7 +30,24 @@
   background: #fff !important;
   border-radius: 4px !important;
 }
-/* Hero Section 1 */
+/* ******** Hero Area ********** */
+.hero {
+  height: 70vh;
+}
+.hero-section-title {
+  font-weight: 600;
+  font-size: 50px;
+  line-height: 56px;
+  letter-spacing: -2.2px;
+  color: #2f363f;
+}
+.hero-section-subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #2f363f;
+}
+/*
 .herobackground {
   height: 655px;
   background-image: url("../assets/images/strategy-hero.png"),
@@ -16,35 +56,27 @@
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 30%, 100%, 20%;
   background-blend-mode: lighten;
-}
-.hero-section-container-1 {
-  height: 590px;
-}
-.hero-section-main {
-  height: 596px;
-}
-.hero-section-title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 50px;
-  line-height: 56px;
-  letter-spacing: -2.2px;
+} */
+.hero .card-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: -0.1px;
   color: #2f363f;
 }
-.hero-section-subtitle {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 22px;
-  line-height: 34px;
-  color: #2f363f;
-}
-.card-subtitle {
+.hero .card-subtitle {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   color: #81878c;
 }
-.card-text {
+.hero .card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
   color: #535b62;
 }
-.card-footer {
+.hero .card-footer {
   background: rgb(31, 122, 224, 0.04);
   color: #2f363f;
   font-size: 14px;
@@ -58,23 +90,33 @@
   line-height: 22px;
   color: #2f363f;
 }
-.hero-section-link-title{
-font-style: normal;
-font-weight: normal;
-font-size: 11px;
-line-height: 12px;
-color: rgba(31, 122, 224, 0.7);
+.hero-section-link-title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 12px;
+  color: rgba(31, 122, 224, 0.7);
 }
-.hero-section-link-subtitle{
+.hero-section-link-subtitle {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 15px;
-  color: #1F7AE0;
+  color: #1f7ae0;
 }
 /* Hero section 2 */
-.hero-section-2-main{
+.hero-section-2-main {
   height: 596px;
+}
+.hero-section-2-main-card-title {
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 600;
+}
+.hero-section-2-main-card-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
 }
 .hero-section2-title {
   font-weight: 600;
@@ -86,11 +128,11 @@ color: rgba(31, 122, 224, 0.7);
 }
 .hero-section2-subtitle {
   font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 30px;
-text-align: center;
-color: #535B62;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #535b62;
 }
 .flex {
   display: flex;
@@ -168,22 +210,7 @@ color: #535B62;
 .fs-50 {
   font-size: 50px;
 }
-/* margin ---------------*/
-.m-0 {
-  margin: 0%;
-}
-.mt-10 {
-  margin-top: 10px;
-}
-.mr-10 {
-  margin-right: 10px;
-}
-.ml-10 {
-  margin-left: 10px;
-}
-.m-10 {
-  margin: 10px;
-}
+
 /* Custom css */
 .sticky {
   position: fixed;
