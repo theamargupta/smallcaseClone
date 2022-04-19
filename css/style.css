@@ -1,5 +1,60 @@
+:root {
+  --bs-body-font-weight: 400;
+  --bs-body-font-size: 1rem;
+  --bs-body-line-height: 1.5;
+  --bs-body-bg: #fff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
-  font-family: "Graphik", sans-serif;
+  margin: 0;
+  font-size: var(--bs-body-font-size);
+  font-weight: var(--bs-body-font-weight);
+  line-height: var(--bs-body-line-height);
+  text-align: var(--bs-body-text-align);
+  background-color: var(--bs-body-bg);
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  background-color: currentColor;
+  border: 0;
+  opacity: 0.25;
+}
+
+hr:not([size]) {
+  height: 0.125rem;
+}
+
+h6,
+.h6,
+h5,
+.h5,
+h4,
+.h4,
+h3,
+.h3,
+h2,
+.h2,
+h1,
+.h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  line-height: 1.2;
 }
 /* ******** Margin ********** */
 .m-0 {
@@ -21,18 +76,30 @@ body {
   margin-top: 50px !important;
 }
 /* ******** Navbar ********** */
-.navbar {
-  height: 10vh;
-}
+
 .primary-btn {
   color: #1f7ae0 !important;
   border: 1px solid #bbd7f5 !important;
   background: #fff !important;
   border-radius: 4px !important;
 }
+
 /* ******** Hero Area ********** */
 .hero {
-  height: 70vh;
+  padding-top: 6rem;
+  /* background-image: url("../assets/images/herobg1.png"), */
+  /* url("../assets/images/heroBG2.png"), url("../assets/images/herobg3.png"); */
+  background-position: left bottom, center, top right;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-size: auto, cover, auto;
+  height: 655px;
+}
+.hero-left {
+  width: 502px;
+}
+.hero-right {
+  width: 428px;
+  height: 315px;
 }
 .hero-section-title {
   font-weight: 600;
@@ -51,18 +118,17 @@ body {
 .herobackground {
   height: 655px;
   background-image: url("../assets/images/strategy-hero.png"),
-    url(../assets/images/BG.png), url(../assets/images/smallcase-logo.png);
+  url(../assets/images/BG.png), url(../assets/images/smallcase-logo.png);
   background-position: left bottom, center, right top;
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-size: 30%, 100%, 20%;
   background-blend-mode: lighten;
 } */
 .hero .card-title {
-  font-weight: 400;
   font-size: 20px;
+  font-weight: 400;
   line-height: 22px;
-  letter-spacing: -0.1px;
-  color: #2f363f;
+  text-align: left;
 }
 .hero .card-subtitle {
   font-weight: 400;
@@ -84,25 +150,118 @@ body {
   text-align: center;
 }
 .hero-section-content-icon-button {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #2f363f;
 }
 .hero-section-link-title {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 11px;
   line-height: 12px;
   color: rgba(31, 122, 224, 0.7);
 }
 .hero-section-link-subtitle {
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 14px;
   line-height: 15px;
   color: #1f7ae0;
+}
+/* ******** highlights Area ********** */
+.highlights {
+  height: 1194px;
+}
+.highlights .title {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 45px;
+  text-align: center;
+  color: #2f363f;
+  margin: 0;
+}
+.highlights .subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #535b62;
+  margin: 0;
+}
+.highlights .card-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.163636px;
+  color: #2f363f;
+}
+.highlights .card-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: #81878c;
+}
+.highlights .card-text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #535b62;
+}
+/* ******** popular Area ********** */
+.popular {
+  height: 70vh;
+}
+.popular .title {
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 45px;
+  /* text-align: center; */
+  letter-spacing: -0.8px;
+  color: #2f363f;
+}
+.popular .subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  /* text-align: center; */
+  color: #535b62;
+}
+.popular .card-title {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: -0.163636px;
+  color: #2f363f;
+}
+.popular .card-subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: #81878c;
+}
+.popular .card-text {
+  font-size: 14px;
+  line-height: 21px;
+  color: #535b62;
+}
+.card-row {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 14px;
+  color: #81878c;
+  margin: 0;
+}
+.card-col-amount {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.363636px;
+  color: #2f363f;
+  margin: 0;
+}
+.card-col-perct {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.363636px;
+  color: #19af55;
+  margin: 0;
 }
 /* Hero section 2 */
 .hero-section-2-main {
@@ -118,22 +277,7 @@ body {
   line-height: 20px;
   font-weight: 400;
 }
-.hero-section2-title {
-  font-weight: 600;
-  font-size: 34px;
-  line-height: 45px;
-  text-align: center;
-  letter-spacing: -0.8px;
-  color: #2f363f;
-}
-.hero-section2-subtitle {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: center;
-  color: #535b62;
-}
+
 .flex {
   display: flex;
 }
