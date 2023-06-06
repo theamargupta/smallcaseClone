@@ -21,3 +21,4 @@ The Smallcase Website Homepage Clone is deployed and hosted on Vercel. You can a
 
 ## Conclusion
 The Smallcase Website Homepage Clone project demonstrates the ability to recreate the visual design and layout of a real-world website using HTML, CSS, and JavaScript. By mimicking the features and aesthetics of the original Smallcase website, the clone provides a familiar experience to users and showcases the developer's skills in front-end web development.
+![Home](https://i.ibb.co/PjyJCHt/download-copy.jpg)
